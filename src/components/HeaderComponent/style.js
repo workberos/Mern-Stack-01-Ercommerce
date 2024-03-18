@@ -4,6 +4,9 @@ import styled from "styled-components";
 const WrapperHeader = styled(Row)`
     padding: 10px 120px;
     background-color: rgb(24, 148, 255); 
+    align-item: center;
+    gap: 16px;
+    flex-wrap: nowrap;  
 `;
 
 const WrapperTextHeader = styled.span`
@@ -24,6 +27,7 @@ const WrapperHeaderAccount = styled.div`
 const WrapperTextHeaderSmall = styled.span`
     font-size: 12px;
     color: #ffff;
+    white-space: nowrap;
 `
 
 
