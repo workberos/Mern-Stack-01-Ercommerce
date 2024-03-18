@@ -1,30 +1,30 @@
-import Input from "antd/es/input/Input";
 import { SearchOutlined } from '@ant-design/icons';
-import { Button } from "antd";
+import InputComponent from "../InputComponent/InputComponent";
+import ButtonComponent from '../ButtonComponent/ButtonComponent';
 
 export default function ButtonInputSearch(props) {
     const {
         size, placeholder, textButton,
         backgroundColorInput = "#ffff",
-        backgroundColorButton = "rgb( 13, 92, 182)",
+        backgroundColorButton = "rgb(253,141,28)",
         colorButton = "#ffff",
         variant = "borderless",
     } = props;
     return (
-        <div style={{ display: 'flex', background: "#fff" }}>
-            <Input
+        <div style={{ display: 'flex'}}>
+            <InputComponent
                 size={size}
                 placeholder={placeholder}
                 variant= {variant}
                 style={{ borderRadius: 0, backgroundColor: backgroundColorInput }}
             />
-            <Button
+            <ButtonComponent
                 size={size}
+                styleButton ={{ borderRadius: 0, border: variant === "borderless" &&  'none', backgroundColor: backgroundColorButton }}
                 icon={<SearchOutlined style={{ color: colorButton }} />}
-                style={{ borderRadius: 0, border: variant === "borderless" &&  'none', backgroundColor: backgroundColorButton }}
-            >
-                <span style={{ color: colorButton }}>{textButton}</span>
-            </Button>
+                textButton={textButton}
+                styleTextButton={{color: colorButton}}
+            />
         </div>
     )
 }
