@@ -1,10 +1,10 @@
-import SliderComponent from "../../components/SliderComponent/SliderComponent";
-import TypeProduct from "../../components/TypeProduct/TypeProduct";
 import slider1 from "../../../assets/images/slider1.png";
 import slider2 from "../../../assets/images/slider2.png";
 import slider3 from "../../../assets/images/slider3.png";
-import { WrapperButtonMore, WrapperProducts, WrapperTypeProduct } from "./style";
+import TypeProduct from "../../components/TypeProduct/TypeProduct";
 import CardComponent from "../../components/CardComponent/CardComponent";   
+import SliderComponent from "../../components/SliderComponent/SliderComponent";
+import { WrapperButtonMore, WrapperProducts, WrapperTypeProduct } from "./style";
 
 export default function HomePage() {
     const arr = ['TV', 'Tủ lạnh', 'Laptop'];

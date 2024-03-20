@@ -1,5 +1,5 @@
 import React from 'react';
-import { StarOutlined } from '@ant-design/icons';
+import { StarFilled } from '@ant-design/icons';
 import {
   StyleNameProduct,
   WrapperCardStyle,
@@ -10,6 +10,7 @@ import {
 } from './style';
 
 import logo from "../../../assets/images/logo.png";
+import { WrapperStyleTextSell } from '../ProductDetailsComponent/style';
 
 function CardComponent() {
   return (
@@ -23,9 +24,9 @@ function CardComponent() {
       <StyleNameProduct>Iphone</StyleNameProduct>
       <WrapperReportText>
         <span>
-          <span style={{ marginRight: 4 }}>4.96</span> <StarOutlined style={{ fontSize: 12, color: 'yellow' }} />
+          <span style={{ marginRight: 4 }}>4.96</span> <StarFilled style={{ fontSize: 12, color: '#FFC400' }} />
         </span>
-        <span> | Đã bán 1000+</span>
+        <WrapperStyleTextSell> | Đã bán 1000+</WrapperStyleTextSell>
       </WrapperReportText>
       <WrapperPriceText>
         1.000.000đ
