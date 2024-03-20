@@ -15,7 +15,8 @@ export default function HomePage() {
                     {arr.map(product => <TypeProduct key={product} name={product} />)}
                 </WrapperTypeProduct>
             </div>
-            <div className="container" style={{ backgroundColor: "#efefef", padding: ' 0 120px', height: 3000, }}>
+            <div className="body" style={{width: '100%', background: '#efefef'}}>
+            <div className="container" style={{ backgroundColor: "#efefef", padding: ' 0 120px', height: "fit-content", width: 1470, margin: '0 auto'}}>
                 <SliderComponent arrImages={[slider1, slider2, slider3]} />
                 <WrapperProducts>
                     <CardComponent />
@@ -25,9 +26,9 @@ export default function HomePage() {
                     <CardComponent />
                     <CardComponent />
                     <CardComponent />
+                    {/* <CardComponent />
                     <CardComponent />
-                    <CardComponent />
-                    <CardComponent />
+                    <CardComponent /> */}
                 </WrapperProducts>
                 <div style={{width: '100%', display: 'flex', marginTop: 10, justifyContent: 'center'}}>
                     <WrapperButtonMore textButton="Xem thêm" type="outline" styleButton={{
@@ -39,6 +40,7 @@ export default function HomePage() {
                     }} styleTextButton={{ fontWeight: 500 }} />
                 </div>
 
+            </div>
             </div>
         </>
     )

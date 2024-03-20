@@ -1,7 +1,7 @@
 import { Image } from "antd";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { WrapperSliderStyle } from "./style";
 
 export default function SliderComponent({ arrImages }) {
     const settings = {
@@ -14,12 +14,12 @@ export default function SliderComponent({ arrImages }) {
         autoplaySpeed: 2000
     };
     return (
-        <Slider {...settings}>
+        <WrapperSliderStyle {...settings}>
             {arrImages.map((image) => {
                 return(
                     <Image key={image} src={image} alt="slider" width="100%" preview={false} />
                 )
             })}
-        </Slider>
+        </WrapperSliderStyle>
     )
 }

@@ -1,32 +1,38 @@
-import React, { Fragment } from 'react'
-import NavbarComponent from '../../components/NavbarComponent/NavbarComponent'
-import CardComponent from '../../components/CardComponent/CardComponent'
-import { Col, Pagination, Row } from 'antd'
-import { WrapperNavBar, WrapperProducts } from './style'
+import React, { Fragment } from "react";
+import NavbarComponent from "../../components/NavbarComponent/NavbarComponent";
+import { Col, Pagination, Row } from "antd";
+import { WrapperCardComponent, WrapperNavBar, WrapperProducts, WrapperTypeCard } from "./style";
 
 export default function TypeProductPage() {
   return (
-    <div style={{ padding: '0 120px', backgroundColor: "#efefef" }}>
-      <Row style={{ flexWrap: "nowrap", paddingTop: 12 }}>
-        <WrapperNavBar span={4} >
-          <NavbarComponent />
-        </WrapperNavBar>
-        <Col span={20}>
-          <WrapperProducts>
-            <CardComponent />
-            <CardComponent />
-            <CardComponent />
-            <CardComponent />
-            <CardComponent />
-            <CardComponent />
-            <CardComponent />
-            <CardComponent />
-            <CardComponent />
-            <CardComponent />
-          </WrapperProducts>
-          <Pagination defaultCurrent={2} total={100} onChange={() => { }} style={{textAlign: 'center', marginTop: 12}} />
-        </Col>
-      </Row>
+    <div style={{width: "100%", backgroundColor: "#efefef"}}>
+      <div style={{width: 1270, margin: "0 auto", paddingTop: 10 }}>
+        <Row style={{ flexWrap: "nowrap", paddingTop: 12 }}>
+          <WrapperNavBar span={4}>
+            <NavbarComponent />
+          </WrapperNavBar>
+          <Col span={20}>
+            <WrapperProducts>
+              <WrapperCardComponent />
+              <WrapperCardComponent />
+              <WrapperCardComponent />
+              <WrapperCardComponent />
+              <WrapperCardComponent />
+              <WrapperCardComponent />
+              <WrapperCardComponent />
+              <WrapperCardComponent />
+              <WrapperCardComponent />
+              <WrapperCardComponent />
+            </WrapperProducts>
+            <Pagination
+              defaultCurrent={2}
+              total={100}
+              onChange={() => {}}
+              style={{ textAlign: "center", marginTop: 12 }}
+            />
+          </Col>
+        </Row>
+      </div>
     </div>
-  )
+  );
 }

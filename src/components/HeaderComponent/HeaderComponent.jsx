@@ -5,19 +5,19 @@ import ButtonInputSearch from "../ButtonInputSearch/ButtonInputSearch";
 
 export default function HeaderComponent() {
     return (
-        <div>
+        <div style={{width: '100%', background:"rgb(26, 148, 255)", display: "flex", justifyContent: 'center'}}>
             <WrapperHeader>
-                <Col span={6}>
+                <Col span={5}>
                     <WrapperTextHeader>Paws & More</WrapperTextHeader>
                 </Col>
-                <Col span={12} >
+                <Col span={13} >
                     <ButtonInputSearch
                         size="large"
                         textButton="Tìm kiếm"
                         placeholder="Nhập sản phẩm muốn tìm"
                     />
                 </Col>
-                <Col span={6} style={{ display: 'flex', gap: 20, alignItems: 'center' }}>
+                <Col span={6} style={{ display: 'flex', gap: 54, alignItems: 'center' }}>
                     <WrapperHeaderAccount>
                         <UserOutlined style={{ fontSize: "30px" }} />
                         <div>
