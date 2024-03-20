@@ -3,10 +3,10 @@ import styled from "styled-components";
 
 
 export const WrapperCardStyle = styled(Card)`
-    width: 250px;
+    // width: 290px;
     & img {
-        width: 250px;
-        height: 250px;
+        width: 290px;
+        height: 290px;
     }
     position: relative;
 `

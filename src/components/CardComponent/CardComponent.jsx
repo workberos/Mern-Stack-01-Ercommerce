@@ -12,12 +12,14 @@ import {
 import logo from "../../../assets/images/logo.png";
 import { WrapperStyleTextSell } from '../ProductDetailsComponent/style';
 
-function CardComponent() {
+function CardComponent(props) {
+
+  const {cardWidth = 290} = props
   return (
     <WrapperCardStyle
       hoverable
-      styles={{ body: { padding: 10 } }}
-      cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+      styles={{ body: { padding: 10 , width: cardWidth}}}
+      cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"  width={cardWidth}/>}
     >
       <WrapperImageStyle src={logo} />
       <StyleNameProduct>Iphone</StyleNameProduct>

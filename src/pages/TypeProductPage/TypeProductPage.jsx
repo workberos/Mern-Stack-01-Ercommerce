@@ -1,7 +1,7 @@
-import React, { Fragment } from "react";
 import NavbarComponent from "../../components/NavbarComponent/NavbarComponent";
 import { Col, Pagination, Row } from "antd";
-import { WrapperCardComponent, WrapperNavBar, WrapperProducts, WrapperTypeCard } from "./style";
+import { WrapperNavBar, WrapperProducts } from "./style";
+import TypeProductCardComponent from "./TypeProductCardComponent/TypeProductCardComponent";
 
 export default function TypeProductPage() {
   return (
@@ -13,16 +13,16 @@ export default function TypeProductPage() {
           </WrapperNavBar>
           <Col span={20}>
             <WrapperProducts>
-              <WrapperCardComponent />
-              <WrapperCardComponent />
-              <WrapperCardComponent />
-              <WrapperCardComponent />
-              <WrapperCardComponent />
-              <WrapperCardComponent />
-              <WrapperCardComponent />
-              <WrapperCardComponent />
-              <WrapperCardComponent />
-              <WrapperCardComponent />
+              <TypeProductCardComponent />
+              <TypeProductCardComponent />
+              <TypeProductCardComponent />
+              <TypeProductCardComponent />
+              <TypeProductCardComponent />
+              <TypeProductCardComponent />
+              <TypeProductCardComponent />
+              <TypeProductCardComponent />
+              <TypeProductCardComponent />
+              <TypeProductCardComponent />
             </WrapperProducts>
             <Pagination
               defaultCurrent={2}
